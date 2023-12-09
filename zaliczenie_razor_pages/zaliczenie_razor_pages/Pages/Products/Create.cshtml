@@ -1,0 +1,26 @@
+﻿@page
+@model zaliczenie_razor_pages.Pages.Products.CreateModel
+
+@{
+    ViewData["Title"] = "Dodaj nowy produkt";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-3">@ViewData["Title"]</h1>
+
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Product.Name" class="control-label">Nazwa produktu</label>
+            <input asp-for="Product.Name" class="form-control" />
+            <span asp-validation-for="Product.Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.CategoryId" class="control-label">Kategoria</label>
+            <select asp-for="Product.CategoryId" asp-items="Model.CategoriesSelectList" class="form-control"></select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Stwórz</button>
+        <a asp-page="./Index" class="btn btn-secondary">Anuluj</a>
+    </form>
+</div>

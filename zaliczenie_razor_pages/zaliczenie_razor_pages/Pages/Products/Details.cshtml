@@ -1,0 +1,28 @@
+﻿@page
+@model zaliczenie_razor_pages.Pages.Products.DetailsModel
+
+@{
+    ViewData["Title"] = "Szczegóły produktu";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-3">@ViewData["Title"]</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Produkt: @Model.Product.Name</h4>
+            <div class="row">
+                <dt class="col-sm-3">Nazwa</dt>
+                <dd class="col-sm-9">@Model.Product.Name</dd>
+
+                <dt class="col-sm-3">Kategoria</dt>
+                <dd class="col-sm-9">@Model.Product.Category.Name</dd>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-page="./Edit" asp-route-id="@Model.Product.Id" class="btn btn-primary">Edytuj</a>
+        <a asp-page="./Index" class="btn btn-secondary">Cofnij do listy</a>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+﻿@page
+@model zaliczenie_razor_pages.Pages.Categories.DeleteModel
+
+@{
+    ViewData["Title"] = "Usuń Kategorię";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Category.Id" />
+    <p>Czy na pewno chcesz usunąć kategorię @Model.Category.Name?</p>
+    <button type="submit" class="btn btn-danger">Usuń</button>
+    <a asp-page="./Index" class="btn btn-secondary">Anuluj</a>
+</form>

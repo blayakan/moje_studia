@@ -1,0 +1,19 @@
+﻿@page
+@model zaliczenie_razor_pages.Pages.Categories.EditModel
+
+@{
+    ViewData["Title"] = "Edytuj Kategorię";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Category.Id" />
+    <div class="form-group">
+        <label asp-for="Category.Name" class="control-label"></label>
+        <input asp-for="Category.Name" class="form-control" />
+        <span asp-validation-for="Category.Name" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Zapisz</button>
+    <a asp-page="./Index" class="btn btn-secondary">Anuluj</a>
+</form>

@@ -1,0 +1,7 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/zaliczenie_razor_pages/zaliczenie_razor_pages/zaliczenie_razor_pages.csproj
+
+.vs/

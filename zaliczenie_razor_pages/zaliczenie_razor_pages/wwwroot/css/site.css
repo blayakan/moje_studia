@@ -1,0 +1,41 @@
+/* Stylizacja nag³ówka strony */
+header {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Stylizacja sekcji z list¹ produktów */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    background-color: #F9F9F9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja stopki strony */
+footer {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}

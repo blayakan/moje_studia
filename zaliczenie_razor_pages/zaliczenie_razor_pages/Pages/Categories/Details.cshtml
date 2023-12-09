@@ -1,0 +1,20 @@
+﻿@page
+@model zaliczenie_razor_pages.Pages.Categories.DetailsModel
+
+@{
+    ViewData["Title"] = "Szczegóły Kategorii";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Kategoria</h4>
+    <dl class="row">
+        <dt class="col-sm-2">Nazwa</dt>
+        <dd class="col-sm-10">@Model.Category.Name</dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Category.Id" class="btn btn-primary">Edytuj</a>
+    <a asp-page="./Index" class="btn btn-secondary">Cofnij do listy</a>
+</div>
